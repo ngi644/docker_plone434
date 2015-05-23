@@ -30,5 +30,12 @@ http://localhost:18080
 Mapping for local storage
 ================================
 
-$ sudo docker run --name plone_cn -d -p 10022:22 -p 18080:8080 -v /tmp/fs/var:/home/plone/plone4_3_3/zinstance/var plone434
+mapping for var folder
+---------------------------
 
+$ sudo docker run --name plone_cn -d -p 10022:22 -p 18080:8080 -v /tmp/fs/var:/home/plone/plone4_3_4/zinstance/var plone434
+
+mapping for src folder
+---------------------------
+
+$ sudo docker run --name plone_cn -d -p 10022:22 -p 18080:8080 -v /tmp/plone_dev/src/:/home/plone/plone4_3_4/zinstance/src plone434
